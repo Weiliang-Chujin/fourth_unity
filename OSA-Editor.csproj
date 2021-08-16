@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CCD57999-2EF0-F9D7-BDD2-E108718BCA6F}</ProjectGuid>
+    <ProjectGuid>{6908D9C4-C442-710C-86C2-7C1692BDC0D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>OSA-Editor</AssemblyName>
@@ -68,16 +68,16 @@
      <Compile Include="Assets\ThirdParty\OSA\Scripts\Editor\OSAWizard\InitOSAWindow.cs" />
      <None Include="Assets\ThirdParty\OSA\Scripts\Editor\OSA.Editor.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -272,7 +272,7 @@
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/hehuan/third_test/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -637,7 +637,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="OSA.csproj">
-      <Project>{038D789A-2473-D480-7B0A-D66170E29D24}</Project>
+      <Project>{9F49EB78-5CB0-9441-E658-96BBFA0D1C40}</Project>
       <Name>OSA</Name>
     </ProjectReference>
   </ItemGroup>

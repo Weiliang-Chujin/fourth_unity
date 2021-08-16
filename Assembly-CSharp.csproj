@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{250373B5-0C7D-2CCF-C7D2-600AA79BDEC9}</ProjectGuid>
+    <ProjectGuid>{B8EFA8EC-BBCA-5457-3254-476F16D8E7EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,47 +58,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Config\JsonReader.cs" />
+     <Compile Include="Assets\Scripts\API\HeroTowerRankListApi.cs" />
      <Compile Include="Assets\Scripts\Controller\BasicListAdapter.cs" />
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller\PopupWindowController.cs" />
      <Compile Include="Assets\Scripts\Controller\RankItemController.cs" />
      <Compile Include="Assets\Scripts\Data\MyListItemViewsHolder.cs" />
      <Compile Include="Assets\Scripts\Data\RankData.cs" />
+     <Compile Include="Assets\ThirdParty\HttpClient\BaseAPI.cs" />
+     <Compile Include="Assets\ThirdParty\HttpClient\ContentTypeUtil.cs" />
+     <Compile Include="Assets\ThirdParty\HttpClient\DefaultAPI.cs" />
+     <Compile Include="Assets\ThirdParty\HttpClient\HttpClient.cs" />
+     <Compile Include="Assets\ThirdParty\HttpClient\HttpClientBuilder.cs" />
+     <Compile Include="Assets\ThirdParty\HttpClient\IPlatformAPI.cs" />
+     <Compile Include="Assets\ThirdParty\HttpClient\NetworkUtil.cs" />
+     <Compile Include="Assets\ThirdParty\HttpClient\Reg.cs" />
+     <Compile Include="Assets\ThirdParty\HttpClient\e392323d23a.cs" />
      <Compile Include="Assets\ThirdParty\SimpleJSON.cs" />
      <None Include="Assets\ThirdParty\OSA\Resources\OSA\Templates\ScriptsChunks\HeaderComment.txt" />
      <None Include="Assets\ThirdParty\OSA\Resources\OSA\Templates\Scripts\BasicListAdapter.txt" />
      <None Include="Assets\ThirdParty\OSA\Resources\OSA\Templates\Scripts\BasicGridAdapter.txt" />
      <None Include="Assets\ThirdParty\OSA\Docs\Manual link.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/hehuan/third_test/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -272,7 +281,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/hehuan/third_test/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/hehuan/fourth_test/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -628,11 +637,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="OSA-Editor.csproj">
-      <Project>{CCD57999-2EF0-F9D7-BDD2-E108718BCA6F}</Project>
+      <Project>{6908D9C4-C442-710C-86C2-7C1692BDC0D9}</Project>
       <Name>OSA-Editor</Name>
     </ProjectReference>
     <ProjectReference Include="OSA.csproj">
-      <Project>{038D789A-2473-D480-7B0A-D66170E29D24}</Project>
+      <Project>{9F49EB78-5CB0-9441-E658-96BBFA0D1C40}</Project>
       <Name>OSA</Name>
     </ProjectReference>
   </ItemGroup>

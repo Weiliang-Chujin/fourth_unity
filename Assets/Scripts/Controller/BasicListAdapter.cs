@@ -19,8 +19,8 @@ namespace Your.Namespace.Here.UniqueStringHereToAvoidNamespaceConflicts.Lists
 	{
 		public SimpleDataHelper<RankData> Data { get; private set; }
 		public Text timeText; //倒计时文字
-		public JsonReader jsonRead; //json读取类
-		public RankItemController rankItemController; //排行榜item控制
+		public RankItemController rankItemController; //排行榜item控制类
+		private HeroTowerRankListApi heroTowerRankListApi; //http请求类
 		
 		private int totalTime; //距离赛季刷新的时间，单位秒
 		private int day; //天数
@@ -34,7 +34,18 @@ namespace Your.Namespace.Here.UniqueStringHereToAvoidNamespaceConflicts.Lists
 		{
 			Data = new SimpleDataHelper<RankData>(this);
 
-			totalTime = jsonRead.ReadJson()["countDown"];
+			heroTowerRankListApi = new HeroTowerRankListApi(new GameObject())
+			{
+				OnSuccess = this.OnSuccess,
+			};
+
+			base.Awake();
+			heroTowerRankListApi.Request();
+			
+			// http请求数据中没有倒计时数据，此处读取的是第三题json中的倒计时数据
+			TextAsset txtobj = (TextAsset)Resources.Load("Json/ranklist");
+			JSONNode json = JSONNode.Parse(txtobj.text);
+			totalTime = json["countDown"];
 			
 			base.Awake();
 			StartCoroutine(updateCountdown());
@@ -50,6 +61,11 @@ namespace Your.Namespace.Here.UniqueStringHereToAvoidNamespaceConflicts.Lists
 				yield return new WaitForSeconds(1);
 				totalTime--;
 			}
+		}
+		
+		protected void OnSuccess(string data)
+		{
+			OnDataRetrieved(HeroTowerRankListApi.ParseResponse(data));
 		}
 		
 		//计算时间，秒数转为天时分秒
@@ -116,8 +132,7 @@ namespace Your.Namespace.Here.UniqueStringHereToAvoidNamespaceConflicts.Lists
 		IEnumerator FetchMoreItemsFromDataSourceAndUpdate()
 		{
 			yield return new WaitForSeconds(.5f);
-
-			OnDataRetrieved(jsonRead.rankData);
+			
 		}
 
 		void OnDataRetrieved(RankData[] newItems)

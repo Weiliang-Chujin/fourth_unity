@@ -1571,7 +1571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 33.089996, y: 9}
+  m_AnchoredPosition: {x: 33.089966, y: 9}
   m_SizeDelta: {x: 104.902405, y: -10.3834305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &947330306
@@ -1728,7 +1728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.24, y: 12}
+  m_AnchoredPosition: {x: 16.39, y: 12}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976366486
@@ -1982,7 +1982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -207}
+  m_AnchoredPosition: {x: 0, y: -206.99994}
   m_SizeDelta: {x: 0, y: -414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087839363
@@ -2445,7 +2445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.046078432, y: 0}
   m_AnchorMax: {x: 0.9438149, y: 0.9642889}
-  m_AnchoredPosition: {x: 5.5, y: -176}
+  m_AnchoredPosition: {x: 5.5, y: -175.99994}
   m_SizeDelta: {x: 11, y: -352.43286}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1197171528
@@ -2521,7 +2521,6 @@ MonoBehaviour:
     _ItemPrefab: {fileID: 1818590396}
     _AlsoControlItemTransversalSize: 0
   timeText: {fileID: 597074732}
-  jsonRead: {fileID: 1280411339}
   rankItemController: {fileID: 1280411340}
 --- !u!114 &1197171529
 MonoBehaviour:
