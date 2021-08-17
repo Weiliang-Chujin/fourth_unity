@@ -63,8 +63,8 @@
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller\PopupWindowController.cs" />
      <Compile Include="Assets\Scripts\Controller\RankItemController.cs" />
-     <Compile Include="Assets\Scripts\Data\MyListItemViewsHolder.cs" />
      <Compile Include="Assets\Scripts\Data\RankData.cs" />
+     <Compile Include="Assets\Scripts\View\MyListItemViewsHolder.cs" />
      <Compile Include="Assets\ThirdParty\HttpClient\BaseAPI.cs" />
      <Compile Include="Assets\ThirdParty\HttpClient\ContentTypeUtil.cs" />
      <Compile Include="Assets\ThirdParty\HttpClient\DefaultAPI.cs" />
