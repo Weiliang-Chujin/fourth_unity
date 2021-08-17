@@ -24,7 +24,7 @@ public class PopupWindowController : MonoBehaviour
     }
 
     //显示信息弹窗，更新个人信息展示
-    public void ShowWindowPopup()
+    private void ShowWindowPopup()
     {
         StringBuilder stringBuilder = new StringBuilder();
         popupWindow.SetActive(true);
@@ -37,7 +37,7 @@ public class PopupWindowController : MonoBehaviour
     }
     
     //关闭信息弹窗
-    public void CloseWindowPopup()
+    private void CloseWindowPopup()
     {
         popupWindow.SetActive(false);
     }
