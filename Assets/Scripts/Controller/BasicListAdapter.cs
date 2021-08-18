@@ -19,7 +19,7 @@ namespace Your.Namespace.Here.UniqueStringHereToAvoidNamespaceConflicts.Lists
 	{
 		public SimpleDataHelper<RankData> Data { get; private set; }
 		public Text timeText; //倒计时文字
-		public RankItemController rankItemController; //排行榜item控制类
+		public RankItemView rankItemView; //排行榜item视图类
 		private HeroTowerRankListApi heroTowerRankListApi; //http请求类
 		
 		private int totalTime; //距离赛季刷新的时间，单位秒
@@ -101,7 +101,7 @@ namespace Your.Namespace.Here.UniqueStringHereToAvoidNamespaceConflicts.Lists
 		
 		protected override void UpdateViewsHolder(MyListItemViewsHolder newOrRecycled)
 		{
-			rankItemController.InitializeRankItemInfo(Data, newOrRecycled);
+			rankItemView.InitializeRankItemInfo(Data, newOrRecycled);
 		}
 
 		
