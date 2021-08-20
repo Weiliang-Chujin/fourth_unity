@@ -19,7 +19,7 @@ public class HeroTowerRankListApi : BaseAPI
     //构建httpClientBuilder发送请求
     public void Request(int seasonId = 0, int page = 1, bool isForceRequest = false)
     {
-        var httpClientBuilder = CreateHttpClientBuilder(seasonId, page, isForceRequest);
+        var httpClientBuilder = CreateHttpClientBuilder(seasonIgit remote rm origind, page, isForceRequest);
         SendRequest(httpClientBuilder);
     }
    

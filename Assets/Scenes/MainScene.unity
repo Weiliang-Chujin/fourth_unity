@@ -2373,7 +2373,7 @@ MonoBehaviour:
     _ItemPrefab: {fileID: 1818590396}
     _AlsoControlItemTransversalSize: 0
   timeText: {fileID: 597074732}
-  rankItemController: {fileID: 1280411340}
+  rankItemView: {fileID: 1280411340}
 --- !u!114 &1197171529
 MonoBehaviour:
   m_ObjectHideFlags: 0
